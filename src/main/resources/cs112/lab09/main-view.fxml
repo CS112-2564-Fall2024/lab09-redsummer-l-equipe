@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="429.0"
-      xmlns="http://javafx.com/javafx/8"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="cs112.lab09.controllers.MainController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.MainController">
    <children>
+      <Label fx:id="titleLabel" alignment="CENTER" prefHeight="68.0" prefWidth="609.0" text="Title" />
+      <Label fx:id="subtitleLabel" alignment="CENTER" prefHeight="74.0" prefWidth="599.0" text="Subtitle" />
+      <Label fx:id="descriptionLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="235.0" prefWidth="618.0" text="Description" wrapText="true" />
+      <Pane prefHeight="310.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="281.0" fitWidth="448.0" layoutX="76.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleStartButton" text="Start" />
+            <Button mnemonicParsing="false" onAction="#handleQuitButton" prefHeight="25.0" prefWidth="56.0" text="Quit" />
+         </children>
+      </HBox>
    </children>
 </VBox>
