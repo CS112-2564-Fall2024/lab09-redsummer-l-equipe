@@ -33,13 +33,14 @@ public class MainController {
         titleLabel.setText(MAIN_TITLE);
         subtitleLabel.setText(MAIN_SUBTITLE);
         descriptionLabel.setText(MAIN_DESCRIPTION);
+
         //Image image = new Image(REDSUMMER_IMAGE_PATH);
         //imageLabel.setImage(image);
     }
 
-    public void handleStartButton() throws IDException {
+    public void handleStartButton() throws IOException {
         Stage stage = (Stage)titleLabel.getScene().getWindow();
-        FXMLLoader fxLoader = new FXMLLoader(RedSummer.class.getResource(MAP_VIEW_RESOURCE));
+        FXMLLoader fxmlLoader = new FXMLLoader(RedSummer.class.getResource(MAP_VIEW_RESOURCE));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle(MAP_VIEW_TITLE);
