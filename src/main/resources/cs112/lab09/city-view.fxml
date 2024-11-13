@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="cs112.lab09.controllers.CityController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView id="eventImageView" fitHeight="150.0" fitWidth="200.0" layoutX="55.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="328.0" layoutY="28.0" prefHeight="319.0" prefWidth="242.0">
+         <children>
+            <Label id="locationLabel" alignment="CENTER" prefHeight="30.0" prefWidth="242.0" text="Location" textAlignment="CENTER" wrapText="true" />
+            <Label id="dateLabel" alignment="CENTER" prefHeight="24.0" prefWidth="242.0" text="Date" wrapText="true" />
+            <Label id="descriptionLabel" alignment="CENTER" prefHeight="84.0" prefWidth="252.0" text="Description" textAlignment="CENTER" wrapText="true" />
+            <Label id="revisedDescriptionLabel" alignment="CENTER" prefHeight="118.0" prefWidth="264.0" text="Revised Description" textAlignment="CENTER" wrapText="true" />
+            <Hyperlink id="sourceHyperlink" alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="242.0" text="Source" wrapText="true" />
+         </children>
+      </VBox>
+      <Button id="closeButton" layoutX="272.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleCloseButton" text="Close" />
+   </children>
 </AnchorPane>

@@ -19,13 +19,10 @@ public class MainController {
 
     @FXML
     Label titleLabel;
-
     @FXML
     Label subtitleLabel;
-
     @FXML
     Label descriptionLabel;
-
     @FXML
     ImageView imageLabel;
 
@@ -34,8 +31,8 @@ public class MainController {
         subtitleLabel.setText(MAIN_SUBTITLE);
         descriptionLabel.setText(MAIN_DESCRIPTION);
 
-        //Image image = new Image(REDSUMMER_IMAGE_PATH);
-        //imageLabel.setImage(image);
+        Image image = new Image(REDSUMMER_IMAGE_PATH);
+        imageLabel.setImage(image);
     }
 
     public void handleStartButton() throws IOException {

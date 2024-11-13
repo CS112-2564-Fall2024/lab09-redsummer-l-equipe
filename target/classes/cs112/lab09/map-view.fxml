@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="cs112.lab09.controllers.MapController"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.MapController">
+   <children>
+      <ImageView fx:id="imageLabel" fitHeight="332.0" fitWidth="525.0" layoutX="36.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="sanFranciscoCalifornia" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleSanFranciscoCalifornia" prefHeight="31.0" prefWidth="140.0" text="San Francisco, CA" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="bisbeeArizona" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleBisbeeArizona" prefHeight="31.0" prefWidth="91.0" text="Bisbee, AZ" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+   </children>
+</Pane>

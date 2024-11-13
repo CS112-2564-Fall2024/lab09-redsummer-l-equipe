@@ -12,7 +12,7 @@
       <Label fx:id="descriptionLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="235.0" prefWidth="618.0" text="Description" wrapText="true" />
       <Pane prefHeight="310.0" prefWidth="600.0">
          <children>
-            <ImageView fitHeight="281.0" fitWidth="448.0" layoutX="76.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imageLabel" fitHeight="281.0" fitWidth="448.0" layoutX="76.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </Pane>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
